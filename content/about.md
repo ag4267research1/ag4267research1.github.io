@@ -1,24 +1,22 @@
 ---
 title: "About"
-description: "Hugo, the world's fastest framework for building websites"
-date: "2019-02-28"
-author: "Hugo Authors"
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+## Anish Ghosh  
+PhD Student, Applied Mathematics  
+University of Maryland, Baltimore County (UMBC)
 
-Hugo makes use of a variety of open source projects including:
+I am currently a **PhD student in the Matheamtics and Statistics Department at the University of Maryland, Baltimore County (UMBC)**. My work lies at the intersection of **mathematical theory and computation**, where rigorous analysis and modern computational methods inform one another.
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+My research interests include **numerical analysis, partial differential equations, and optimization**. I am particularly interested in studying the **mathematical structure of difficult problems**, developing theoretical understanding through analysis and proofs, and then using those insights to design **more effective computational methods**. I am interested in both the **theoretical foundations—proofs, analysis, and algorithmic guarantees—and the practical implementation of scalable numerical methods**.
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+I also explore computational approaches including **scientific computing, high-performance computing, operator learning, and quantum algorithms** for solving complex mathematical systems.
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+This website collects **research notes, ideas, and projects** that explore the relationship between **mathematical theory and computation**.
 
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+<p>
+I am currently working under the supervision of 
+<a href="https://userpages.umbc.edu/~gobbert/" target="_blank">Dr. Matthias Gobbert</a> 
+and 
+<a href="https://www.mohammad-mhms.com/" target="_blank">Dr. Mohammadhossein Mohammadisiahroudi</a>.
+</p>
