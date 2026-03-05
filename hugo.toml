@@ -33,7 +33,7 @@ enableRobotsTXT = true
     size = "h-14"
 
   [params.site]
-    name = "Tella"
+    name = "Theory-Code"
 
   [params.icon]
     # If you want to use FontAwesome, set this parameter to true.

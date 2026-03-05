@@ -1,18 +1,20 @@
 [
   {
-    "title": "Simple",
-    "description": "All the bare necessities are there.",
-    "icon": "bi bi-box"
+    "title": "Mathematics",
+    "description": "Numerical analysis, partial differential equations, and optimization theory.",
+    "link": "/categories/mathematics/",
+    "icon": "bi bi-diagram-3"
   },
   {
-    "title": "Fast",
-    "description": "Light weight and fast loading speed.",
+    "title": "Computing",
+    "description": "Scientific computing, operator learning, quantum algorithms, and high-performance computing.",
+    "link": "/categories/computing/",
+    "icon": "bi bi-cpu"
+  },
+  {
+    "title": "Research Projects",
+    "description": "Ongoing research projects, experiments, and computational studies.",
+    "link": "/products/",
     "icon": "bi bi-lightning-charge"
-  },
-  {
-    "title": "Github",
-    "description": "Please fork the Github repository and contribute to this theme!",
-    "link": "https://github.com/opera7133/tella",
-    "icon": "bi bi-github"
   }
 ]
