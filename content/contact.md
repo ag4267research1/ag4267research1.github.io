@@ -1,8 +1,8 @@
 ---
 title: "Contact"
-date: 2024-01-01
+date: 2026-05-03
 ---
 
 You can contact me at:
 
-**Email:** your_email@example.com
+anishg1@umbc.edu
