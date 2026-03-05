@@ -1,13 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Theory-Code</title><link>https://theory-code.com/</link><description>Recent content on Theory-Code</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://theory-code.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Hybrid Quantum Adjoint Method for PDE-Constrained Optimization</title><link>https://theory-code.com/products/hpdeco/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate><guid>https://theory-code.com/products/hpdeco/</guid><description/></item><item><title>Optimal Control Problems</title><link>https://theory-code.com/blog/optimal-control-problems/</link><pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate><guid>https://theory-code.com/blog/optimal-control-problems/</guid><description>&lt;p&gt;Optimal control problems arise when we want to &lt;strong&gt;determine a control variable that optimizes a given objective while satisfying dynamical or physical constraints&lt;/strong&gt;. These problems appear naturally in engineering, physics, economics, and many areas of applied mathematics.&lt;/p&gt;
-&lt;p&gt;A classical formulation can be written as&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Theory-Code</title><link>https://theory-code.com/</link><description>Recent content on Theory-Code</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://theory-code.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Hybrid Quantum Adjoint Method for PDE-Constrained Optimization</title><link>https://theory-code.com/products/hpdeco/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate><guid>https://theory-code.com/products/hpdeco/</guid><description/></item><item><title>Optimal Control Problems</title><link>https://theory-code.com/blog/optimal-control-problems/</link><pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate><guid>https://theory-code.com/blog/optimal-control-problems/</guid><description>&lt;p&gt;Optimal control problems arise when we want to determine a &lt;strong&gt;control variable&lt;/strong&gt;
+that optimizes an objective while satisfying dynamical or physical constraints.
+These problems appear naturally in engineering, physics, economics, and applied mathematics.&lt;/p&gt;
+&lt;h2 id="classical-formulation"&gt;Classical Formulation&lt;/h2&gt;
+&lt;p&gt;A standard formulation can be written as&lt;/p&gt;
 &lt;p&gt;$$
 \min_{u} J(u)
 $$&lt;/p&gt;
-&lt;p&gt;subject to a constraint&lt;/p&gt;
+&lt;p&gt;subject to&lt;/p&gt;
 &lt;p&gt;$$
-c(x,u)=0
+c(x,u) = 0
 $$&lt;/p&gt;
-&lt;p&gt;where (x) typically represents the &lt;strong&gt;state variable&lt;/strong&gt; governed by a differential equation and (u) represents the &lt;strong&gt;control&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>About</title><link>https://theory-code.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://theory-code.com/about/</guid><description>&lt;h2 id="anish-ghosh"&gt;Anish Ghosh&lt;/h2&gt;
+&lt;p&gt;where&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(x) represents the &lt;strong&gt;state variable&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;(u) represents the &lt;strong&gt;control variable&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="pde-constrained-optimization"&gt;PDE-Constrained Optimization&lt;/h2&gt;
+&lt;p&gt;In many applications the constraint takes the form of a &lt;strong&gt;partial differential equation&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Contact</title><link>https://theory-code.com/contact/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate><guid>https://theory-code.com/contact/</guid><description>&lt;p&gt;You can reach me at:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href="mailto:aghosh@umbc.edu"&gt;aghosh@umbc.edu&lt;/a&gt;&lt;/p&gt;</description></item><item><title>About</title><link>https://theory-code.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://theory-code.com/about/</guid><description>&lt;h2 id="anish-ghosh"&gt;Anish Ghosh&lt;/h2&gt;
 &lt;p&gt;PhD Student, Applied Mathematics&lt;br&gt;
 University of Maryland, Baltimore County (UMBC)&lt;/p&gt;
 &lt;p&gt;I am currently a PhD student in the Matheamtics and Statistics Department at the University of Maryland, Baltimore County (UMBC). My work lies at the intersection of mathematical theory and computation, where rigorous analysis and modern computational methods inform one another.&lt;/p&gt;
