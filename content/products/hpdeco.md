@@ -4,7 +4,8 @@ date: 2024-01-01
 draft: false
 featured: true
 weight: 1
-description: "Quantum-accelerated adjoint methods for PDE-constrained optimization."
+description: "Hybrid quantum–classical algorithms for accelerating PDE-constrained optimization."
 
-external_link: "https://theory-code.com/Quantum-Accelerated-Adjoint-Method-PDE-Constrained-Optimization/"
+layout: "redirect"
+redirect_to: "https://theory-code.com/Quantum-Accelerated-Adjoint-Method-PDE-Constrained-Optimization/"
 ---
