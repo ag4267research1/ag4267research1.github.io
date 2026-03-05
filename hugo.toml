@@ -33,7 +33,8 @@ enableRobotsTXT = true
     size = "h-14"
 
   [params.site]
-    name = "Theory-Code"
+name = "Theory-Code"
+copyright = "© 2026 A. Ghosh — Theory-Code"
 
   [params.icon]
     # If you want to use FontAwesome, set this parameter to true.
@@ -100,7 +101,7 @@ meta_twitter_card = "summary_large_image"
 
   [[menu.footer]]
     name = "Github"
-    url = "https://github.com/opera7133/tella"
+    url = "https://github.com/ag4267research1"
     #pre = "<i class='bi bi-github text-2xl'></i>"
     weight = 2
 
