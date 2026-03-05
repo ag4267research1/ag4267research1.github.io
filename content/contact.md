@@ -1,7 +1,8 @@
 ---
-title: 'Contact'
+title: "Contact"
+date: 2024-01-01
 ---
 
-To contact us, please fill out the form below.
+You can contact me at:
 
-{{< form >}}
+**Email:** your_email@example.com
