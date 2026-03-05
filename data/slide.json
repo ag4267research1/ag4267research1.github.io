@@ -1,20 +1,7 @@
-// [
-//   {
-//     "title": "Mathematical proofs illuminate truth the way the aurora reveals the hidden beauty of the night sky.",
-//     "image": "img/slide/slide01.jpg"
-//   },
-//   {
-//     "title": "Proof reveals the structure of mathematics; computation lets us climb its vast landscape.",
-//     "image": "img/slide/slide02.jpg",
-//     "color": "text-black"
-//   }
-// ]
-
 [
   {
     "title": "Mathematical proofs illuminate truth the way the aurora reveals the hidden beauty of the night sky.",
-    "image": "img/slide/slide01.jpg",
-    "color": "text-white drop-shadow-xl"
+    "image": "img/slide/slide01.jpg"
   },
   {
     "title": "Proof reveals the structure of mathematics; computation lets us climb its vast landscape.",
