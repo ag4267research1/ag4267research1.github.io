@@ -12,7 +12,7 @@ My research interests include numerical analysis, partial differential equations
 
 I also explore computational approaches including scientific computing, high-performance computing, operator learning, and quantum algorithms for solving complex mathematical systems.
 
-This website collects research notes, ideas, and projects that explore the relationship between **mathematical theory and computation.
+This website collects research notes, ideas, and projects that explore the relationship between mathematical theory and computation.
 
 <p>
 My advisors are
