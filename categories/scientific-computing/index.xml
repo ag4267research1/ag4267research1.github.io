@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Scientific-Computing on Theory-Code</title><link>https://theory-code.com/categories/scientific-computing/</link><description>Recent content in Scientific-Computing on Theory-Code</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://theory-code.com/categories/scientific-computing/index.xml" rel="self" type="application/rss+xml"/><item><title>Optimal Control Problems</title><link>https://theory-code.com/blog/optimal-control-problems/</link><pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate><guid>https://theory-code.com/blog/optimal-control-problems/</guid><description>&lt;p&gt;Optimal control problems arise when we want to &lt;strong&gt;determine a control variable that optimizes a given objective while satisfying dynamical or physical constraints&lt;/strong&gt;. These problems appear naturally in engineering, physics, economics, and many areas of applied mathematics.&lt;/p&gt;
+&lt;p&gt;A classical formulation can be written as&lt;/p&gt;
+&lt;p&gt;$$
+\min_{u} J(u)
+$$&lt;/p&gt;
+&lt;p&gt;subject to a constraint&lt;/p&gt;
+&lt;p&gt;$$
+c(x,u)=0
+$$&lt;/p&gt;
+&lt;p&gt;where (x) typically represents the &lt;strong&gt;state variable&lt;/strong&gt; governed by a differential equation and (u) represents the &lt;strong&gt;control&lt;/strong&gt;.&lt;/p&gt;</description></item></channel></rss>
