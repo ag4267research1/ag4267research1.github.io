@@ -42,16 +42,14 @@ enableRobotsTXT = true
     # You can also use Bootstrap Icons.
     bootstrap = true
 
-  [params.homepage_meta_tags]
-    meta_description = "A Hugo Theme for OSSProject, Companies, Organization..."
-    meta_og_title = "Tella"
-    meta_og_type = "website"
-    meta_og_url = "https://tella.pages.dev"
-    meta_og_image = "https://raw.githubusercontent.com/opera7133/tella/master/images/tn.png"
-    meta_og_description = "A Hugo Theme for OSSProject, Companies, Organization..."
-    meta_twitter_card = "summary_large_image"
-    meta_twitter_site = "@username"
-    meta_twitter_creator = "@username"
+[params.homepage_meta_tags]
+meta_description = "Research in Numerical Analysis, PDEs, Optimization, Scientific Computing, Quantum Algorithms and High Performance Computing."
+meta_og_title = "Theory-Code | Mathematics and Scientific Computing"
+meta_og_type = "website"
+meta_og_url = "https://theory-code.com"
+meta_og_image = "/img/logo/logo.svg"
+meta_og_description = "Research notes on mathematics, scientific computing, quantum algorithms and HPC."
+meta_twitter_card = "summary_large_image"
 
   [params.giscus]
     # Giscus Comment System
