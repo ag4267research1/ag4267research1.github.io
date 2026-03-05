@@ -251,6 +251,7 @@
       "transition-colors",
       "transition-opacity",
       "transition-transform",
+      "underline",
       "uppercase",
       "w-14",
       "w-5",
@@ -261,10 +262,12 @@
     "ids": [
       "adjoint-method",
       "anish-ghosh",
+      "classical-formulation",
       "hamburgerbtn",
       "illustration",
       "mobileMenu",
       "overlay",
+      "pde-constrained-optimization",
       "thumb",
       "url"
     ]

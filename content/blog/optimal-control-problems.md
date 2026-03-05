@@ -3,27 +3,34 @@ title: "Optimal Control Problems"
 date: 2026-03-05
 draft: false
 author: "Anish Ghosh"
-math: true
-tags: ["optimization", "pde", "control"]
 categories: ["mathematics", "scientific-computing"]
-description: "A short introduction to optimal control problems and their computational aspects."
+math: true
 ---
 
-Optimal control problems arise when we want to **determine a control variable that optimizes a given objective while satisfying dynamical or physical constraints**. These problems appear naturally in engineering, physics, economics, and many areas of applied mathematics.
+Optimal control problems arise when we want to determine a **control variable**
+that optimizes an objective while satisfying dynamical or physical constraints.
+These problems appear naturally in engineering, physics, economics, and applied mathematics.
 
-A classical formulation can be written as
+## Classical Formulation
+
+A standard formulation can be written as
 
 $$
 \min_{u} J(u)
 $$
 
-subject to a constraint
+subject to
 
 $$
-c(x,u)=0
+c(x,u) = 0
 $$
 
-where \(x\) typically represents the **state variable** governed by a differential equation and \(u\) represents the **control**.
+where
+
+- \(x\) represents the **state variable**
+- \(u\) represents the **control variable**
+
+## PDE-Constrained Optimization
 
 In many applications the constraint takes the form of a **partial differential equation**
 
@@ -31,26 +38,15 @@ $$
 A(u)x = f
 $$
 
-which leads to the class of **PDE-constrained optimization problems**.
+This leads to the class of **PDE-constrained optimization problems**.
 
 ## Adjoint Method
 
-A common approach for computing gradients efficiently is the **adjoint method**.  
-Instead of differentiating the constraint explicitly, an adjoint equation is introduced:
+A common approach for computing gradients efficiently is the **adjoint method**.
+Instead of differentiating the constraint explicitly, an adjoint equation is introduced.
 
-$$
-A(u)^T p = \frac{\partial J}{\partial x}.
-$$
-
-This allows the gradient of the reduced objective to be computed as
-
-$$
-\nabla \hat J(u) =
-\frac{\partial J}{\partial u} -
-\left\langle p , \frac{\partial c}{\partial u} \right\rangle.
-$$
-
-Adjoint methods are widely used in **scientific computing, optimal control, and inverse problems**.
+This allows gradients of the objective functional to be computed with cost
+comparable to solving the PDE itself.
 
 ## Illustration
 

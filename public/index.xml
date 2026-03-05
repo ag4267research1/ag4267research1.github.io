@@ -20,14 +20,14 @@
       <link>http://localhost:1313/blog/optimal-control-problems/</link>
       <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/optimal-control-problems/</guid>
-      <description>&lt;p&gt;Optimal control problems arise when we want to &lt;strong&gt;determine a control variable that optimizes a given objective while satisfying dynamical or physical constraints&lt;/strong&gt;. These problems appear naturally in engineering, physics, economics, and many areas of applied mathematics.&lt;/p&gt;&#xA;&lt;p&gt;A classical formulation can be written as&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;\min_{u} J(u)&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;subject to a constraint&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;c(x,u)=0&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;where (x) typically represents the &lt;strong&gt;state variable&lt;/strong&gt; governed by a differential equation and (u) represents the &lt;strong&gt;control&lt;/strong&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Optimal control problems arise when we want to determine a &lt;strong&gt;control variable&lt;/strong&gt;&#xA;that optimizes an objective while satisfying dynamical or physical constraints.&#xA;These problems appear naturally in engineering, physics, economics, and applied mathematics.&lt;/p&gt;&#xA;&lt;h2 id=&#34;classical-formulation&#34;&gt;Classical Formulation&lt;/h2&gt;&#xA;&lt;p&gt;A standard formulation can be written as&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;\min_{u} J(u)&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;subject to&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;c(x,u) = 0&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;where&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;(x) represents the &lt;strong&gt;state variable&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;(u) represents the &lt;strong&gt;control variable&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;pde-constrained-optimization&#34;&gt;PDE-Constrained Optimization&lt;/h2&gt;&#xA;&lt;p&gt;In many applications the constraint takes the form of a &lt;strong&gt;partial differential equation&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;p&gt;You can contact me at:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:your_email@example.com&#34;&gt;your_email@example.com&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;You can reach me at:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:aghosh@umbc.edu&#34;&gt;aghosh@umbc.edu&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>

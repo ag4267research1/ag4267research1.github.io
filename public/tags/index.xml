@@ -9,31 +9,10 @@
     <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Control</title>
-      <link>http://localhost:1313/tags/control/</link>
-      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/control/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Index</title>
       <link>http://localhost:1313/tags/index/</link>
       <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/index/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Optimization</title>
-      <link>http://localhost:1313/tags/optimization/</link>
-      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/optimization/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pde</title>
-      <link>http://localhost:1313/tags/pde/</link>
-      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pde/</guid>
       <description></description>
     </item>
   </channel>

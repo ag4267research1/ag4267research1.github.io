@@ -1,8 +1,9 @@
 ---
 title: "Contact"
-date: 2026-05-03
+date: 2024-01-01
+draft: false
 ---
 
-You can contact me at:
+You can reach me at:
 
-anishg1@umbc.edu
+**Email:** aghosh@umbc.edu  

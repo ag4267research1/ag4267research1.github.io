@@ -35,10 +35,10 @@
 
 
 
-<meta name="description" content="A short introduction to optimal control problems and their computational aspects.">
+<meta name="description" content="">
 <meta property="og:title" content=" | " />
 <meta property="og:site_name" content="Theory-Code">
-<meta property="og:description" content="A short introduction to optimal control problems and their computational aspects.">
+<meta property="og:description" content="">
 <meta property="og:url" content="http://localhost:1313/blog/optimal-control-problems/">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="">
@@ -47,7 +47,7 @@
 
 <link rel="canonical" href="http://localhost:1313/blog/optimal-control-problems/">
 
-<meta name="twitter:description" content="A short introduction to optimal control problems and their computational aspects.">
+<meta name="twitter:description" content="">
 <meta property="article:published_time" content="2026-03-05T00:00:00&#43;00:00">
 <meta property="article:updated_time" content="2026-03-05T00:00:00&#43;00:00">
 
@@ -182,34 +182,34 @@
     </header>
 
     <div class="content prose prose-lg max-w-none text-tlgray-700 leading-relaxed mx-auto mb-12">
-        <p>Optimal control problems arise when we want to <strong>determine a control variable that optimizes a given objective while satisfying dynamical or physical constraints</strong>. These problems appear naturally in engineering, physics, economics, and many areas of applied mathematics.</p>
-<p>A classical formulation can be written as</p>
+        <p>Optimal control problems arise when we want to determine a <strong>control variable</strong>
+that optimizes an objective while satisfying dynamical or physical constraints.
+These problems appear naturally in engineering, physics, economics, and applied mathematics.</p>
+<h2 id="classical-formulation">Classical Formulation</h2>
+<p>A standard formulation can be written as</p>
 <p>$$
 \min_{u} J(u)
 $$</p>
-<p>subject to a constraint</p>
+<p>subject to</p>
 <p>$$
-c(x,u)=0
+c(x,u) = 0
 $$</p>
-<p>where (x) typically represents the <strong>state variable</strong> governed by a differential equation and (u) represents the <strong>control</strong>.</p>
+<p>where</p>
+<ul>
+<li>(x) represents the <strong>state variable</strong></li>
+<li>(u) represents the <strong>control variable</strong></li>
+</ul>
+<h2 id="pde-constrained-optimization">PDE-Constrained Optimization</h2>
 <p>In many applications the constraint takes the form of a <strong>partial differential equation</strong></p>
 <p>$$
 A(u)x = f
 $$</p>
-<p>which leads to the class of <strong>PDE-constrained optimization problems</strong>.</p>
+<p>This leads to the class of <strong>PDE-constrained optimization problems</strong>.</p>
 <h2 id="adjoint-method">Adjoint Method</h2>
-<p>A common approach for computing gradients efficiently is the <strong>adjoint method</strong>.<br>
-Instead of differentiating the constraint explicitly, an adjoint equation is introduced:</p>
-<p>$$
-A(u)^T p = \frac{\partial J}{\partial x}.
-$$</p>
-<p>This allows the gradient of the reduced objective to be computed as</p>
-<p>$$
-\nabla \hat J(u) =
-\frac{\partial J}{\partial u} -
-\left\langle p , \frac{\partial c}{\partial u} \right\rangle.
-$$</p>
-<p>Adjoint methods are widely used in <strong>scientific computing, optimal control, and inverse problems</strong>.</p>
+<p>A common approach for computing gradients efficiently is the <strong>adjoint method</strong>.
+Instead of differentiating the constraint explicitly, an adjoint equation is introduced.</p>
+<p>This allows gradients of the objective functional to be computed with cost
+comparable to solving the PDE itself.</p>
 <h2 id="illustration">Illustration</h2>
 <p><img src="/img/blog/optimal-control.png" alt="Optimal Control Illustration"></p>
 <!-- 
@@ -344,6 +344,12 @@ Many modern research directions attempt to improve the computational cost of sol
     </div>
   </div>
   <div class="copy pl-8 py-5 bg-tlgray-700 text-white text-base">
+      <p style="font-size:12px; opacity:0.8;">
+    Icons by 
+    <a href="https://www.flaticon.com/free-icons/mathematical" target="_blank" class="underline">
+      Jagat Icon – Flaticon
+    </a>
+  </p>
     &copy; Theory-Code 2026 All Rights Reserved.
   </div>
 </footer>
