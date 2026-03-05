@@ -1,6 +1,6 @@
 baseURL = "https://ag4267research1.github.io/"
 title = "Tella"
-author = "username"
+author = "A.Ghosh"
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -72,7 +72,7 @@ enableRobotsTXT = true
 [menu]
   [[menu.main]]
     identifier = "products"
-    name = "Products"
+    name = "Projects"
     url = "/products/"
     weight = 1
 
