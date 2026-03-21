@@ -4,3 +4,6 @@ title: "Posts"
 author: "A.Ghosh"
 tags: ["index"]
 ---
+
+
+<!-- shortuct for math inline is : minline + tab -->
