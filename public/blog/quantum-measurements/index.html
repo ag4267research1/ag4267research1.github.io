@@ -3,7 +3,7 @@
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 <meta charset="utf-8">
-<title>Theory-Code | Optimal Control Problems</title>
+<title>Theory-Code | Quantum Measurement: A Mathematical Overview</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,37 +30,37 @@
 
 <link rel="stylesheet" href='/css/custom.css'>
 
-<meta property="og:title" content="Theory-Code | Optimal Control Problems" />
+<meta property="og:title" content="Theory-Code | Quantum Measurement: A Mathematical Overview" />
 
 
 
 
-<meta name="description" content="A short introduction to optimal control and PDE-constrained optimization.">
+<meta name="description" content="">
 <meta property="og:title" content=" | " />
 <meta property="og:site_name" content="Theory-Code">
-<meta property="og:description" content="A short introduction to optimal control and PDE-constrained optimization.">
-<meta property="og:url" content="http://localhost:1313/blog/optimal-control-problems/">
+<meta property="og:description" content="">
+<meta property="og:url" content="http://localhost:1313/blog/quantum-measurements/">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@tech_chiba">
 
-<link rel="canonical" href="http://localhost:1313/blog/optimal-control-problems/">
+<link rel="canonical" href="http://localhost:1313/blog/quantum-measurements/">
 
-<meta name="twitter:description" content="A short introduction to optimal control and PDE-constrained optimization.">
-<meta property="article:published_time" content="2026-03-05T00:00:00&#43;00:00">
-<meta property="article:updated_time" content="2026-03-05T00:00:00&#43;00:00">
+<meta name="twitter:description" content="">
+<meta property="article:published_time" content="2026-03-21T00:00:00&#43;00:00">
+<meta property="article:updated_time" content="2026-03-21T00:00:00&#43;00:00">
 
 
 
 
 
     
-<meta property="og:image" content="http://localhost:1313/img/blog/OptimalControl1.png">
+<meta property="og:image" content="http://localhost:1313/img/blog/Quantum_Computing/Measurement/QM1.png">
     
 
 
-<meta name="twitter:title" content="Optimal Control Problems">
+<meta name="twitter:title" content="Quantum Measurement: A Mathematical Overview">
 
 
 </head>
@@ -147,10 +147,10 @@
     <header class="mb-8 text-center md:text-left">
         
         <div class="rounded-xl overflow-hidden mb-8 aspect-video w-full shadow-md">
-            <img src="http://localhost:1313/img/blog/OptimalControl1.png" alt="Optimal Control Problems" class="w-full h-full object-cover">
+            <img src="http://localhost:1313/img/blog/Quantum_Computing/Measurement/QM1.png" alt="Quantum Measurement: A Mathematical Overview" class="w-full h-full object-cover">
         </div>
         
-        <h1 class="text-3xl md:text-5xl font-extrabold text-tlgray-800 mb-6 leading-tight">Optimal Control Problems</h1>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-tlgray-800 mb-6 leading-tight">Quantum Measurement: A Mathematical Overview</h1>
 
         <div class="flex flex-wrap items-center justify-center md:justify-start text-sm text-tlgray-500 gap-6 mb-6 border-b border-tlgray-200 pb-6">
             <div class="flex items-center">
@@ -158,7 +158,7 @@
                     <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
                     <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
                 </svg>
-                <time datetime="2026-03-05T00:00:00Z">2026/03/05</time>
+                <time datetime="2026-03-21T00:00:00Z">2026/03/21</time>
             </div>
 
             
@@ -166,7 +166,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="mr-2" viewBox="0 0 16 16">
                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                 </svg>
-                <span>Anish Ghosh</span>
+                <span>A. Ghosh</span>
             </div>
             
 
@@ -177,7 +177,7 @@
                 </svg>
                 <div class="flex gap-2">
                 
-                <a href='http://localhost:1313/categories/mathematics' class="hover:text-blue-600 transition-colors">Mathematics</a>
+                <a href='http://localhost:1313/categories/computing' class="hover:text-blue-600 transition-colors">Computing</a>
                 
                 </div>
             </div>
@@ -186,17 +186,7 @@
     </header>
 
     <div class="content prose prose-lg max-w-none text-tlgray-700 leading-relaxed mx-auto mb-12">
-        <p>Optimal control problems arise when we want to determine a <strong>control variable</strong>
-that optimizes an objective function while satisfying physical or dynamical constraints.</p>
-<p>These problems appear naturally in engineering, physics, economics and many areas
-of applied mathematics.</p>
-<!-- 
-```bash
-{{ if or .Params.math .Site.Params.math }}
-{{ partial "math.html" . }}
-{{ end }}
-``` -->
-
+        
 
 <!-- KaTeX -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
@@ -204,71 +194,38 @@ of applied mathematics.</p>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 
 
-<p>In many applications the goal is to minimize a functional of the form</p>
-<p>$$
-\min_{u} J(u)
-$$</p>
-<p>subject to a constraint</p>
-<p>$$
-c(x,u) = 0
-$$</p>
-<p>where</p>
-<ul>
-<li>(x) represents the <strong>state variable</strong></li>
-<li>(u) represents the <strong>control variable</strong></li>
-</ul>
-<p>In many scientific computing problems the constraint takes the form of a
-<strong>partial differential equation</strong></p>
-<p>$$
-A(u)x = f
-$$</p>
-<p>which leads to the class of <strong>PDE-constrained optimization problems</strong>.</p>
-<h3 id="adjoint-method">Adjoint Method</h3>
-<p>A common technique for computing gradients efficiently is the <strong>adjoint method</strong>.
-Instead of differentiating the PDE constraint directly, an adjoint equation is introduced.</p>
-<p>This allows gradients of the objective functional to be computed with a cost
-comparable to solving the PDE itself.</p>
-<h3 id="examples">Examples</h3>
+<p><strong>Coming soon.</strong></p>
+<p>This post will give a simple mathematical overview of quantum measurement for a single qubit. It will explain how a qubit is written as a vector in (\mathbb{C}^2)
+ \( \mathbb{C}^2 \) , how measurement in a basis produces outcomes from the squared sizes of the amplitudes, and why measurement changes the state. It will also use the Stern–Gerlach experiment to motivate the qubit model and the Bloch sphere to give an intuitive picture of single-qubit states and measurements.</p>
 
-<p>
-Example of inline math appearing in optimal control:
-\( \nabla J(u) = \frac{\partial J}{\partial u} \)
-</p>
-
-<p>Block equation example:</p>
-<p>$$
-\mathcal{L}(x,u,\lambda) =
-J(x,u) + \lambda^{T} c(x,u)
-$$</p>
-<p>where ( \lambda ) represents the <strong>adjoint variable</strong>.</p>
     </div>
 
     
     <div class="border-t border-tlgray-200 pt-8 pb-8">
         <h5 class="text-center text-sm font-semibold text-gray-500 uppercase tracking-wider mb-6">Share this post</h5>
         <div class="flex flex-wrap justify-center gap-4">
-            <a href="https://twitter.com/intent/tweet?url=http%3a%2f%2flocalhost%3a1313%2fblog%2foptimal-control-problems%2f&text=Optimal%20Control%20Problems" target="_blank"
+            <a href="https://twitter.com/intent/tweet?url=http%3a%2f%2flocalhost%3a1313%2fblog%2fquantum-measurements%2f&text=Quantum%20Measurement%3a%20A%20Mathematical%20Overview" target="_blank"
                 class="flex items-center gap-2 px-6 py-3 bg-black text-white hover:bg-gray-800 transition-all shadow-sm hover:shadow-md">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
                 </svg>
                 <span class="font-medium">X</span>
             </a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2foptimal-control-problems%2f&t=Optimal%20Control%20Problems" target="_blank"
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fblog%2fquantum-measurements%2f&t=Quantum%20Measurement%3a%20A%20Mathematical%20Overview" target="_blank"
                 class="flex items-center gap-2 px-6 py-3 bg-[#1877F2] text-white hover:bg-[#166fe5] transition-all shadow-sm hover:shadow-md">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
                 </svg>
                 <span class="font-medium">Facebook</span>
             </a>
-            <a href="https://timeline.line.me/social-plugin/share?url=http%3a%2f%2flocalhost%3a1313%2fblog%2foptimal-control-problems%2f"
+            <a href="https://timeline.line.me/social-plugin/share?url=http%3a%2f%2flocalhost%3a1313%2fblog%2fquantum-measurements%2f"
                 class="flex items-center gap-2 px-6 py-3 bg-[#06C755] text-white hover:bg-[#05b34c] transition-all shadow-sm hover:shadow-md">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0M5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.15.15 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157m.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832l-.013-.015v-.001l-.01-.01-.003-.003-.011-.009h-.001L7.88 4.79l-.003-.002-.005-.003-.008-.005h-.002l-.003-.002-.01-.004-.004-.002-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.2.2 0 0 0 .039.038l.001.001.01.006.004.002.008.004.007.003.005.002.01.003h.003a.2.2 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.16.16 0 0 0-.108.044h-.001l-.001.002-.002.003a.16.16 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.16.16 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z"/>
                 </svg>
                 <span class="font-medium">LINE</span>
             </a>
-            <button onclick="OnClickURL();" id="url" data-clipboard-text="Optimal Control Problems http://localhost:1313/blog/optimal-control-problems/"
+            <button onclick="OnClickURL();" id="url" data-clipboard-text="Quantum Measurement: A Mathematical Overview http://localhost:1313/blog/quantum-measurements/"
                 class="flex items-center gap-2 px-6 py-3 bg-gray-700 text-white hover:bg-gray-600 transition-all shadow-sm hover:shadow-md cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
@@ -287,19 +244,17 @@ $$</p>
     
     <nav class="mt-12 w-full grid grid-cols-1 md:grid-cols-2 gap-6">
         
-        <div></div>
-        
-
-        
-        <a href="http://localhost:1313/blog/quantum-measurements/" class="group block p-6 border border-tlgray-200 transition-all text-right">
-            <span class="text-sm text-gray-500 font-medium mb-2 block group-hover:text-blue-600">Next</span>
-            <div class="flex items-center justify-end gap-3">
-                <span class="text-lg font-bold text-gray-800 group-hover:text-blue-600 transition-colors line-clamp-2">Quantum Measurement: A Mathematical Overview</span>
+        <a href="http://localhost:1313/blog/optimal-control-problems/" class="group block p-6 border border-tlgray-200 transition-all text-left">
+            <span class="text-sm text-gray-500 font-medium mb-2 block group-hover:text-blue-600">Previous</span>
+            <div class="flex items-center gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 shrink-0 text-gray-400 group-hover:text-blue-600 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                 </svg>
+                <span class="text-lg font-bold text-gray-800 group-hover:text-blue-600 transition-colors line-clamp-2">Optimal Control Problems</span>
             </div>
         </a>
+        
+
         
     </nav>
 

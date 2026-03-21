@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="mx-auto my-10 max-w-6xl">
+  <div class="mx-3 col-span-3 lg:col-span-2 px-2">
+    <h1 class="title text-4xl font-bold mb-8">{{ .Title }}</h1>
+    <div class="content py-1">{{ .Content }}</div>
+
+    {{ $paginator := .Paginate .Pages 6 }}
+    {{ range $paginator.Pages }}
+      <a href="{{ .Permalink }}">
+        <div>{{ partial "summary.html" . }}</div>
+      </a>
+    {{ end }}
+  </div>
+  {{ partial "paginator.html" . }}
+</div>
+{{ end }}

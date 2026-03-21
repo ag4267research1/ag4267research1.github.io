@@ -1,25 +1,43 @@
 ---
-title: "Optimal Control Problems"
+author: Anish Ghosh
+title: Optimal Control Problems
 date: 2026-03-05
-draft: false
-author: "Anish Ghosh"
-categories: ["mathematics", "scientific-computing"]
+image: "/img/blog/OptimalControl1.png"
+categories: ["Mathematics"]
+description: A short introduction to optimal control and PDE-constrained optimization.
 math: true
 ---
 
 Optimal control problems arise when we want to determine a **control variable**
-that optimizes an objective while satisfying dynamical or physical constraints.
-These problems appear naturally in engineering, physics, economics, and applied mathematics.
+that optimizes an objective function while satisfying physical or dynamical constraints.
 
-## Classical Formulation
+These problems appear naturally in engineering, physics, economics and many areas
+of applied mathematics.
 
-A standard formulation can be written as
+<!--more-->
+<!-- 
+```bash
+{{ if or .Params.math .Site.Params.math }}
+{{ partial "math.html" . }}
+{{ end }}
+``` -->
+
+{{< math.inline >}}
+{{ if or .Page.Params.math .Site.Params.math }}
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+{{ end }}
+{{</ math.inline >}}
+
+In many applications the goal is to minimize a functional of the form
 
 $$
 \min_{u} J(u)
 $$
 
-subject to
+subject to a constraint
 
 $$
 c(x,u) = 0
@@ -30,41 +48,37 @@ where
 - \(x\) represents the **state variable**
 - \(u\) represents the **control variable**
 
-## PDE-Constrained Optimization
-
-In many applications the constraint takes the form of a **partial differential equation**
+In many scientific computing problems the constraint takes the form of a
+**partial differential equation**
 
 $$
 A(u)x = f
 $$
 
-This leads to the class of **PDE-constrained optimization problems**.
+which leads to the class of **PDE-constrained optimization problems**.
 
-## Adjoint Method
+### Adjoint Method
 
-A common approach for computing gradients efficiently is the **adjoint method**.
-Instead of differentiating the constraint explicitly, an adjoint equation is introduced.
+A common technique for computing gradients efficiently is the **adjoint method**.
+Instead of differentiating the PDE constraint directly, an adjoint equation is introduced.
 
-This allows gradients of the objective functional to be computed with cost
+This allows gradients of the objective functional to be computed with a cost
 comparable to solving the PDE itself.
 
-## Illustration
+### Examples
 
-![Optimal Control Illustration](/img/blog/optimal-control.png)
-<!-- 
-*Example diagram of a control system.*
+{{< math.inline >}}
+<p>
+Example of inline math appearing in optimal control:
+\( \nabla J(u) = \frac{\partial J}{\partial u} \)
+</p>
+{{</ math.inline >}}
 
-## Remarks
+Block equation example:
 
-Many modern research directions attempt to improve the computational cost of solving such problems, including
+$$
+\mathcal{L}(x,u,\lambda) =
+J(x,u) + \lambda^{T} c(x,u)
+$$
 
-- efficient numerical discretizations
-- large-scale HPC implementations
-- operator learning approaches
-- quantum algorithms for linear systems
-
-## References
-
-1. Lions, J. L. *Optimal Control of Systems Governed by Partial Differential Equations.*
-2. Hinze, M., Pinnau, R., Ulbrich, M., Ulbrich, S. *Optimization with PDE Constraints.*
-3. Tröltzsch, F. *Optimal Control of Partial Differential Equations.* -->
+where \( \lambda \) represents the **adjoint variable**.
