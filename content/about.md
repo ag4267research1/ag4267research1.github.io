@@ -2,11 +2,12 @@
 title: "About"
 ---
 
-## Anish Ghosh  
-PhD Student, Applied Mathematics  
-University of Maryland, Baltimore County (UMBC)
+<img src="/img/cv/profile.jpg" alt="Anish Ghosh" width="220" style="float:right; margin-left:24px; margin-bottom:16px; border-radius:12px;">
 
-I am currently a PhD student in the Matheamtics and Statistics Department at the University of Maryland, Baltimore County (UMBC). My work lies at the intersection of mathematical theory and computation, where rigorous analysis and modern computational methods inform one another.
+## Anish Ghosh  
+
+
+I am currently a PhD student in the Mathematics and Statistics Department at the University of Maryland, Baltimore County (UMBC). My work lies at the intersection of mathematical theory and computation, where rigorous analysis and modern computational methods inform one another.
 
 My research interests include numerical analysis, partial differential equations, and optimization. I am particularly interested in studying the mathematical structure of difficult problems, developing theoretical understanding through analysis and proofs, and then using those insights to design more effective computational methods. I am interested in both the theoretical foundations—proofs, analysis, and algorithmic guarantees—and the practical implementation of scalable numerical methods.
 
@@ -14,9 +15,19 @@ I also explore computational approaches including scientific computing, high-per
 
 This website collects research notes, ideas, and projects that explore the relationship between mathematical theory and computation.
 
+
 <p>
 My advisors are
 <a href="https://userpages.umbc.edu/~gobbert/" target="_blank">Dr. Matthias Gobbert</a> 
 and 
 <a href="https://www.mohammad-mhms.com/" target="_blank">Dr. Mohammadhossein Mohammadisiahroudi</a>.
 </p>
+
+You can find my CV [here](/pdfs/resume.pdf).
+
+
+
+
+
+PhD Student, Applied Mathematics  
+University of Maryland, Baltimore County (UMBC)
