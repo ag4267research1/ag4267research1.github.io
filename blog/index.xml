@@ -5,7 +5,7 @@
 
 
 &lt;p&gt;&lt;strong&gt;Coming soon.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This post will give a simple mathematical overview of quantum measurement for a single qubit. It will explain how a qubit is written as a vector in (\mathbb{C}^2)
+&lt;p&gt;This post will give a simple mathematical overview of quantum measurement for a single qubit. It will explain how a qubit is written as a vector in
  \( \mathbb{C}^2 \) , how measurement in a basis produces outcomes from the squared sizes of the amplitudes, and why measurement changes the state. It will also use the Stern–Gerlach experiment to motivate the qubit model and the Bloch sphere to give an intuitive picture of single-qubit states and measurements.&lt;/p&gt;</description></item><item><title>Optimal Control Problems</title><link>https://theory-code.com/blog/optimal-control-problems/</link><pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate><guid>https://theory-code.com/blog/optimal-control-problems/</guid><description>&lt;p&gt;Optimal control problems arise when we want to determine a &lt;strong&gt;control variable&lt;/strong&gt;
 that optimizes an objective function while satisfying physical or dynamical constraints.&lt;/p&gt;
 &lt;p&gt;These problems appear naturally in engineering, physics, economics and many areas
