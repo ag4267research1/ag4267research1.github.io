@@ -25,3 +25,12 @@ In classical computing the basic unit of information is a bit. A bit can be only
 {{< math.inline >}}
 Unlike a bit, a qubit is not restricted to only \(0\) or \(1\) before measurement.
 {{</ math.inline >}}
+{{< math.inline >}}
+The vectors $\0 \rangle = \begin{bmatrix}
+1 \\
+0
+\end{bmatrix}$ and $|1\rangle = \begin{bmatrix}
+0 \\
+1
+\end{bmatrix} $
+{{</ math.inline >}}
