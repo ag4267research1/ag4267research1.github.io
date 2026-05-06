@@ -34,3 +34,23 @@ The vectors \(|0 \rangle = \begin{bmatrix}
 1
 \end{bmatrix} \)
 {{</ math.inline >}}
+
+
+
+The two computational basis states are
+
+$$
+
+|0\rangle =
+\begin{bmatrix}
+1 \\
+0
+\end{bmatrix},
+\qquad
+|1\rangle =
+\begin{bmatrix}
+0 \\
+1
+\end{bmatrix} 
+
+$$
