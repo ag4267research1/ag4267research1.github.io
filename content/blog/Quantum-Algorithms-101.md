@@ -40,7 +40,6 @@ The vectors \(|0 \rangle = \begin{bmatrix}
 The two computational basis states are
 
 $$
-
 |0\rangle =
 \begin{bmatrix}
 1 \\
@@ -52,5 +51,4 @@ $$
 0 \\
 1
 \end{bmatrix} 
-
 $$
