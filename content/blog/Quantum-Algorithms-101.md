@@ -13,19 +13,9 @@ math: true
 
 In classical computing, the basic unit of information is a bit. A bit can only be in one of two states, either zero or one, and therefore it can be physically implemented by a two-state device.
 
-A qubit is the basic unit of information in quantum computing.
+A qubit is the basic unit of information in quantum computing. Unlike a bit, a qubit is not restricted to only $0$ or $1$ before measurement.
 
-{{< math.inline >}}
-<p>
-Unlike a bit, a qubit is not restricted to only \(0\) or \(1\) before measurement.
-</p>
-{{</ math.inline >}}
-
-{{< math.inline >}}
-<p>
-The two computational basis states are written as \( |0\rangle \) and \( |1\rangle \).
-</p>
-{{</ math.inline >}}
+The two computational basis states are written as $|0\rangle$ and $|1\rangle$.
 
 The two computational basis states are
 
@@ -49,11 +39,7 @@ $$
 |\psi\rangle = \alpha |0\rangle + \beta |1\rangle.
 $$
 
-{{< math.inline >}}
-<p>
-Here, \( \alpha \) and \( \beta \) are complex numbers called probability amplitudes.
-</p>
-{{</ math.inline >}}
+Here, $\alpha$ and $\beta$ are complex numbers called probability amplitudes.
 
 Using column-vector notation, the same qubit can be written as
 
@@ -71,11 +57,7 @@ $$
 |\alpha|^2 + |\beta|^2 = 1.
 $$
 
-{{< math.inline >}}
-<p>
-The probability of measuring \(0\) is \( |\alpha|^2 \), and the probability of measuring \(1\) is \( |\beta|^2 \).
-</p>
-{{</ math.inline >}}
+The probability of measuring $0$ is $|\alpha|^2$, and the probability of measuring $1$ is $|\beta|^2$.
 
 Therefore,
 
