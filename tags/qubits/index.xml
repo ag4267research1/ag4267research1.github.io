@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Qubits on Theory-Code</title><link>https://theory-code.com/tags/qubits/</link><description>Recent content in Qubits on Theory-Code</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 21 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://theory-code.com/tags/qubits/index.xml" rel="self" type="application/rss+xml"/><item><title>Quantum Computing Basics: Qubits, Superposition, and Measurement</title><link>https://theory-code.com/blog/quantum-algorithms-101/</link><pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate><guid>https://theory-code.com/blog/quantum-algorithms-101/</guid><description>&lt;h2 id="single-qubit"&gt;Single Qubit&lt;/h2&gt;
+&lt;p&gt;In classical computing, the basic unit of information is a bit. A bit can only be in one of two states, either zero or one, and therefore it can be physically implemented by a two-state device.&lt;/p&gt;
+&lt;p&gt;A qubit is the basic unit of information in quantum computing.&lt;/p&gt;
+
+&lt;p&gt;
+Unlike a bit, a qubit is not restricted to only \(0\) or \(1\) before measurement.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+The two computational basis states are written as \( |0\rangle \) and \( |1\rangle \).
+&lt;/p&gt;</description></item></channel></rss>
