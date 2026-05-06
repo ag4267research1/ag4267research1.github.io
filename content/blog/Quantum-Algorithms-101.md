@@ -49,8 +49,7 @@ and
 
 The two computational basis states are
 
-{{< math >}}
-|0\rangle =
+$$|0\rangle =
 \begin{bmatrix}
 1 \\
 0
@@ -60,5 +59,4 @@ The two computational basis states are
 \begin{bmatrix}
 0 \\
 1
-\end{bmatrix}.
-{{</ math >}}
+\end{bmatrix}.$$
