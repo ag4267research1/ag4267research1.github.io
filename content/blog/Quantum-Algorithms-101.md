@@ -35,6 +35,16 @@ The vectors \(|0 \rangle = \begin{bmatrix}
 \end{bmatrix} \)
 {{</ math.inline >}}
 
+{{< math.inline >}}
+<p>
+The computational basis vectors are
+\( |0\rangle = \left[\begin{smallmatrix} 1 \\ 0 \end{smallmatrix}\right] \)
+and
+\( |1\rangle = \left[\begin{smallmatrix} 0 \\ 1 \end{smallmatrix}\right] \).
+</p>
+{{</ math.inline >}}
+
+
 
 
 The two computational basis states are
