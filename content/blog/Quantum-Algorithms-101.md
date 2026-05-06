@@ -5,7 +5,7 @@ draft: false
 author: "A. Ghosh"
 description:description: "Before diving into quantum algorithms, we need to understand the basic building blocks of quantum computing. This post introduces qubits, superposition, probability amplitudes, measurement, and entanglement in an intuitive way. The goal is to build the foundation needed to understand how quantum algorithms manipulate quantum states and why they can behave differently from classical algorithms."
 image: "/img/blog/Quantum_Computing/Measurement/QM1.png"
-categories: ["Computing"]
+categories: ["Mathematics"]
 tags: ["quantum algorithms"]
 math: true
 ---
