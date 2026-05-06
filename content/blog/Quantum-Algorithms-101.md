@@ -22,13 +22,13 @@ The two computational basis states are
 $$
 |0\rangle =
 \begin{bmatrix}
-1 \\
+1 \\\\
 0
 \end{bmatrix},
 \qquad
 |1\rangle =
 \begin{bmatrix}
-0 \\
+0 \\\\
 1
 \end{bmatrix}.
 $$
@@ -46,7 +46,7 @@ Using column-vector notation, the same qubit can be written as
 $$
 |\psi\rangle =
 \begin{bmatrix}
-\alpha \\
+\alpha \\\\
 \beta
 \end{bmatrix}.
 $$
