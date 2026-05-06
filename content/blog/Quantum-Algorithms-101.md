@@ -1,55 +1,36 @@
 ---
 title: "Quantum Computing Basics: Qubits, Superposition, and Measurement"
 date: 2026-03-21
-draft: false
 author: "A. Ghosh"
-description:description: "Before diving into quantum algorithms, we need to understand the basic building blocks of quantum computing. This post introduces qubits, superposition, probability amplitudes, measurement, and entanglement in an intuitive way. The goal is to build the foundation needed to understand how quantum algorithms manipulate quantum states and why they can behave differently from classical algorithms."
+description: "Before diving into quantum algorithms, we need to understand the basic building blocks of quantum computing. This post introduces qubits, superposition, probability amplitudes, measurement, and entanglement in an intuitive way. The goal is to build the foundation needed to understand how quantum algorithms manipulate quantum states and why they can behave differently from classical algorithms."
 image: "/img/blog/Quantum_Computing/Measurement/QM1.png"
-categories: ["Mathematics"]
-tags: ["quantum algorithms"]
+categories: ["Mathematics", "Computing"]
+tags: ["quantum algorithms", "qubits", "superposition"]
 math: true
 ---
 
-{{< math.inline >}}
-{{ if or .Page.Params.math .Site.Params.math }}
-<!-- KaTeX -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-{{ end }}
-{{</ math.inline >}}
-
 ## Single Qubit
 
-In classical computing the basic unit of information is a bit. A bit can be only in one of the two states either zero or one and therefore can be physically implemented by a two state device. A qubit is the basic unit of information in quantum computing.
+In classical computing, the basic unit of information is a bit. A bit can only be in one of two states, either zero or one, and therefore it can be physically implemented by a two-state device.
+
+A qubit is the basic unit of information in quantum computing.
+
 {{< math.inline >}}
+<p>
 Unlike a bit, a qubit is not restricted to only \(0\) or \(1\) before measurement.
-{{</ math.inline >}}
-{{< math.inline >}}
-The vectors \(|0 \rangle = \begin{bmatrix}
-1 \\
-0
-\end{bmatrix}\) and \(|1\rangle = \begin{bmatrix}
-0 \\
-1
-\end{bmatrix} \)
+</p>
 {{</ math.inline >}}
 
 {{< math.inline >}}
 <p>
-The computational basis vectors are
-\( |0\rangle = \left[\begin{smallmatrix} 1 \\ 0 \end{smallmatrix}\right] \)
-and
-\( |1\rangle = \left[\begin{smallmatrix} 0 \\ 1 \end{smallmatrix}\right] \).
+The two computational basis states are written as \( |0\rangle \) and \( |1\rangle \).
 </p>
 {{</ math.inline >}}
 
-
-
-
 The two computational basis states are
 
-$$|0\rangle =
+$$
+|0\rangle =
 \begin{bmatrix}
 1 \\
 0
@@ -59,4 +40,47 @@ $$|0\rangle =
 \begin{bmatrix}
 0 \\
 1
-\end{bmatrix}.$$
+\end{bmatrix}.
+$$
+
+A general single-qubit state is written as
+
+$$
+|\psi\rangle = \alpha |0\rangle + \beta |1\rangle.
+$$
+
+{{< math.inline >}}
+<p>
+Here, \( \alpha \) and \( \beta \) are complex numbers called probability amplitudes.
+</p>
+{{</ math.inline >}}
+
+Using column-vector notation, the same qubit can be written as
+
+$$
+|\psi\rangle =
+\begin{bmatrix}
+\alpha \\
+\beta
+\end{bmatrix}.
+$$
+
+For the qubit to be physically valid, the amplitudes must satisfy the normalization condition
+
+$$
+|\alpha|^2 + |\beta|^2 = 1.
+$$
+
+{{< math.inline >}}
+<p>
+The probability of measuring \(0\) is \( |\alpha|^2 \), and the probability of measuring \(1\) is \( |\beta|^2 \).
+</p>
+{{</ math.inline >}}
+
+Therefore,
+
+$$
+P(0) = |\alpha|^2,
+\qquad
+P(1) = |\beta|^2.
+$$
