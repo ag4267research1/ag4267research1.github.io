@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Index on Theory-Code</title>
-    <link>http://localhost:1313/tags/index/</link>
+    <link>http://localhost:52526/tags/index/</link>
     <description>Recent content in Index on Theory-Code</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 21 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:52526/tags/index/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Posts</title>
-      <link>http://localhost:1313/blog/</link>
-      <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/</guid>
+      <link>http://localhost:52526/blog/</link>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52526/blog/</guid>
       <description>&lt;!-- shortuct for math inline is : minline + tab --&gt;</description>
     </item>
   </channel>

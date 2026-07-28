@@ -7,6 +7,7 @@
       "br",
       "button",
       "div",
+      "em",
       "footer",
       "h1",
       "h2",
@@ -115,7 +116,6 @@
       "items-center",
       "justify-between",
       "justify-center",
-      "justify-end",
       "leading-none",
       "leading-normal",
       "leading-relaxed",
@@ -233,16 +233,12 @@
       "text-center",
       "text-gray-100",
       "text-gray-300",
-      "text-gray-400",
       "text-gray-500",
       "text-gray-600",
       "text-gray-700",
-      "text-gray-800",
       "text-gray-900",
       "text-grey-900",
-      "text-left",
       "text-lg",
-      "text-right",
       "text-sm",
       "text-tlgray-400",
       "text-tlgray-500",
@@ -270,12 +266,15 @@
     "ids": [
       "adjoint-method",
       "anish-ghosh",
-      "examples",
+      "direct-method",
       "hamburgerbtn",
       "mobileMenu",
       "overlay",
+      "reduced-objective-optimizing-over-x-alone",
       "thumb",
-      "url"
+      "url",
+      "where-this-leaves-us",
+      "why-pde-constrained-optimization"
     ]
   }
 }

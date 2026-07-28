@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mathematics on Theory-Code</title>
-    <link>http://localhost:1313/categories/mathematics/</link>
+    <link>http://localhost:52526/categories/mathematics/</link>
     <description>Recent content in Mathematics on Theory-Code</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/mathematics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:52526/categories/mathematics/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Optimal Control Problems</title>
-      <link>http://localhost:1313/blog/optimal-control-problems/</link>
+      <title>Classical Problems in Optimal Control — and a Quantum Solution</title>
+      <link>http://localhost:52526/blog/pde-constrained-optimization/</link>
       <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/optimal-control-problems/</guid>
+      <guid>http://localhost:52526/blog/pde-constrained-optimization/</guid>
       <description>&lt;p&gt;Optimal control problems arise when we want to determine a &lt;strong&gt;control variable&lt;/strong&gt;&#xA;that optimizes an objective function while satisfying physical or dynamical constraints.&lt;/p&gt;&#xA;&lt;p&gt;These problems appear naturally in engineering, physics, economics and many areas&#xA;of applied mathematics.&lt;/p&gt;</description>
     </item>
   </channel>

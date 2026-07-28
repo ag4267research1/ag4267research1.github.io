@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Theory-Code</title>
-    <link>http://localhost:1313/products/</link>
+    <link>http://localhost:52526/products/</link>
     <description>Recent content in Projects on Theory-Code</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/products/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:52526/products/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hybrid Quantum Adjoint Method for PDE-Constrained Optimization</title>
-      <link>http://localhost:1313/products/hpdeco/</link>
+      <link>http://localhost:52526/products/hpdeco/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/products/hpdeco/</guid>
+      <guid>http://localhost:52526/products/hpdeco/</guid>
       <description></description>
     </item>
   </channel>
