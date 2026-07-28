@@ -18,9 +18,9 @@ This website collects research notes, ideas, and projects that explore the relat
 
 <p>
 My advisors are
-<a href="https://userpages.umbc.edu/~gobbert/" target="_blank">Dr. Matthias Gobbert</a> 
-and 
-<a href="https://www.mohammad-mhms.com/" target="_blank">Dr. Mohammadhossein Mohammadisiahroudi</a>.
+<a href="https://www.mohammad-mhms.com/" target="_blank">Dr. Mohammadhossein Mohammadisiahroudi</a>
+and
+<a href="https://userpages.umbc.edu/~gobbert/" target="_blank">Dr. Matthias Gobbert</a>.
 </p>
 
 You can find my CV [here](/pdfs/resume.pdf).
