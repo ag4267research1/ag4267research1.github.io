@@ -23,7 +23,7 @@ and
 <a href="https://userpages.umbc.edu/~gobbert/" target="_blank">Dr. Matthias Gobbert</a>.
 </p>
 
-You can find my CV [here](/pdfs/resume.pdf).
+You can find my resume [here](/pdfs/resume.pdf).
 
 
 
