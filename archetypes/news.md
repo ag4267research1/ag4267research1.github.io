@@ -1,6 +1,6 @@
 ---
 title: ""
 date: {{ .Date }}
-period: ""
 draft: true
+description: ""
 ---

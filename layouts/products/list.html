@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="mx-auto my-10 max-w-6xl">
+    <div class="mx-3 col-span-3 lg:col-span-2 px-2">
+        <h1 class="title text-4xl font-bold mb-4">{{.Title}}</h1>
+        <div class="content py-1 text-center max-w-2xl mx-auto">{{.Content}}</div>
+        <p class="text-center text-sm text-tlgray-400 mb-10 max-w-2xl mx-auto">Each project's page includes a link to its arXiv paper.</p>
+
+        {{ range .Pages.GroupByParam "period" "desc" }}
+        <div class="mb-14">
+            <h2 class="text-2xl font-bold text-tlgray-800 mb-6 pb-2 border-b border-tlgray-200">{{ .Key }}</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {{ range .Pages.ByWeight }}
+            {{ .Render "summary" }}
+            {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

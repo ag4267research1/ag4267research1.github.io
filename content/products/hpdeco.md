@@ -1,6 +1,7 @@
 ---
 title: "Hybrid Quantum Adjoint Method for PDE-Constrained Optimization"
 date: 2024-01-01
+period: "2025-2026"
 draft: false
 featured: true
 weight: 1

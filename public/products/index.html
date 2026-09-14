@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=52526&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 <meta charset="utf-8">
 <title>Theory-Code | Projects</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -30,6 +30,25 @@
 
 <link rel="stylesheet" href='/css/custom.css'>
 
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false }
+      ],
+      throwOnError: false
+    });
+  });
+</script>
 </head>
 
 <body class="flex flex-col min-h-screen">
@@ -44,8 +63,20 @@
             </li>
             
             <li class="p-2 transform transition-transform hover:scale-110">
+                <a href="/software/" class="text-4xl font-semibold hover:text-gray-300 transition-colors">
+                    <span>Software</span>
+                </a>
+            </li>
+            
+            <li class="p-2 transform transition-transform hover:scale-110">
                 <a href="/blog/" class="text-4xl font-semibold hover:text-gray-300 transition-colors">
                     <span>Blog</span>
+                </a>
+            </li>
+            
+            <li class="p-2 transform transition-transform hover:scale-110">
+                <a href="/news/" class="text-4xl font-semibold hover:text-gray-300 transition-colors">
+                    <span>News</span>
                 </a>
             </li>
             
@@ -65,7 +96,7 @@
     </div>
     <nav class="flex items-center justify-between flex-wrap bg-opacity-100 p-8">
         <div class="flex items-center shrink-0 text-xl text-grey-900 mr-6">
-            <a href="http://localhost:52526/"><img alt="Tella Logo"
+            <a href="http://localhost:1313/"><img alt="Tella Logo"
                     class="h-14 mr-3" src="/img/logo/logo.svg"></a>
         </div>
         <div class="block lg:hidden">
@@ -85,9 +116,19 @@
                     Projects
                 </a>
                 
+                <a href="/software/"
+                    class="duration-200 block mt-4 lg:inline-block lg:mt-0 text-black hover:opacity-60 mr-8">
+                    Software
+                </a>
+                
                 <a href="/blog/"
                     class="duration-200 block mt-4 lg:inline-block lg:mt-0 text-black hover:opacity-60 mr-8">
                     Blog
+                </a>
+                
+                <a href="/news/"
+                    class="duration-200 block mt-4 lg:inline-block lg:mt-0 text-black hover:opacity-60 mr-8">
+                    News
                 </a>
                 
                 <a href="/about/"
@@ -111,12 +152,17 @@
     </div>
 <div class="mx-auto my-10 max-w-6xl">
     <div class="mx-3 col-span-3 lg:col-span-2 px-2">
-        <h1 class="title text-4xl font-bold mb-8">Projects</h1>
-        <div class="content py-1 mb-8 text-center max-w-2xl mx-auto"></div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+        <h1 class="title text-4xl font-bold mb-4">Projects</h1>
+        <div class="content py-1 text-center max-w-2xl mx-auto"></div>
+        <p class="text-center text-sm text-tlgray-400 mb-10 max-w-2xl mx-auto">Each project's page includes a link to its arXiv paper.</p>
+
         
-        <div class="h-full group bg-white transition-all duration-300 border border-tlgray-200 overflow-hidden">
-    <a href="http://localhost:52526/products/hpdeco/" class="h-full flex flex-col">
+        <div class="mb-14">
+            <h2 class="text-2xl font-bold text-tlgray-800 mb-6 pb-2 border-b border-tlgray-200">2025-2026</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="h-full group bg-white transition-all duration-300 border border-tlgray-200 overflow-hidden">
+    <a href="http://localhost:1313/products/hpdeco/" class="h-full flex flex-col">
         
         <div class="p-6 flex flex-col grow">
             <h2 class="text-xl font-semibold mb-3 text-tlgray-800 group-hover:text-blue-600 transition-colors line-clamp-2">
@@ -135,8 +181,10 @@
     </a>
 </div>
 
-        
+            
+            </div>
         </div>
+        
     </div>
 </div>
 
@@ -167,7 +215,14 @@
     }
     toggleNav();
 
-    document.querySelector('.scroll-top').addEventListener('click', () => {
+    const scrollTopBtn = document.querySelector('.scroll-top');
+    const toggleScrollTopVisibility = () => {
+      scrollTopBtn.classList.toggle('is-visible', window.scrollY > 300);
+    };
+    toggleScrollTopVisibility();
+    window.addEventListener('scroll', toggleScrollTopVisibility, { passive: true });
+
+    scrollTopBtn.addEventListener('click', () => {
       document.documentElement.scrollTop = 0;
     });
   </script>
@@ -200,7 +255,7 @@
   </div>
   <div class="copy pl-8 py-5 bg-tlgray-700 text-white text-base">
       <p style="font-size:12px; opacity:0.8;">
-    Icons by 
+    Icons by
     <a href="https://www.flaticon.com/free-icons/mathematical" target="_blank" class="underline">
       Jagat Icon – Flaticon
     </a>
