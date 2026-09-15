@@ -145,6 +145,10 @@ series = "series"
     [markup.goldmark.renderer]
       unsafe = true
 
+[security]
+  [security.exec]
+    allow = ['^(dart-)?sass$', '^git$', '^go$', '^node$', '^npx$', '^postcss$', '^tailwindcss$']
+
 [build]
   [build.buildStats]
     enable = true
