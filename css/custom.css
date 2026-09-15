@@ -32,3 +32,24 @@
 .katex .mopen span {
   all: unset;
 }
+
+/* The theme's scroll-to-top button (.scroll-top, see baseof.html) has no
+   hide/show state of its own, so it sits fixed on screen at all times,
+   including at the top of the page where it has nothing to do. Hide it
+   until the visitor scrolls down (see footer.html, which toggles
+   .is-visible), and fade/slide it in so it reads as a deliberate control
+   rather than a fixed prop. */
+.scroll-top {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.scroll-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.scroll-top:hover {
+  background-color: #000;
+}
