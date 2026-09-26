@@ -4,7 +4,7 @@ date: 2026-09-25
 description: "Slide decks on quantum algorithms."
 ---
 
-Slide decks on quantum algorithms, linked below as PDFs.
+Slides introducing fundamental quantum algorithms, companion material to the [Quantum-Algorithms](https://github.com/ag4267research1/Quantum-Algorithms) repo for anyone getting started with quantum computing.
 
 - [QA1](QA1.pdf)
 - [QA2](QA2.pdf)
