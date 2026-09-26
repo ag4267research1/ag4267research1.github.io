@@ -3,7 +3,7 @@ author: Anish Ghosh
 title: "Quantum State Tomography"
 date: 2026-09-25
 image: "/img/blog/quantum-state-tomography.png"
-categories: ["Mathematics", "Quantum Computing"]
+categories: ["Mathematics", "Computing"]
 description: "What measurement means in quantum state tomography, and the three steps involved: measurement, sign estimation, and norm estimation."
 draft: false
 math: true
