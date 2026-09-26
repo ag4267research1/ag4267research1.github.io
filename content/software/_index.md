@@ -2,4 +2,4 @@
 title: "Software"
 ---
 
-Open-source packages, libraries, and tools I've built for numerical analysis, PDEs, optimization, and scientific computing.
+Open-source software from my research: algorithm collections and tools for quantum computing, optimization, and PDEs.

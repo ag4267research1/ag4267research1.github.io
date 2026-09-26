@@ -1,0 +1,65 @@
+{{ define "meta_tags" }}
+    <meta name="description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
+    <meta property="og:title" content="{{ .Site.Params.homepage_meta_tags.meta_og_title }}" />
+    <meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" />
+    <meta property="og:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_url }}" />
+    <meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
+    <meta property="og:description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
+    <meta name="twitter:card" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_card }}" />
+    <meta name="twitter:site" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}" />
+    <meta name="twitter:creator" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_creator }}" />
+{{ end }}
+
+{{ define "main" }}
+    {{- partial "alert.html" . -}}
+    {{- partial "slide.html" . -}}
+    {{- partial "strip.html" . -}}
+
+    {{ $news := where site.RegularPages "Type" "news" }}
+    {{ if $news }}
+    <div class="mx-auto my-10 max-w-3xl px-4">
+        <h2 class="text-4xl mb-6 font-bold">News</h2>
+        <div class="relative border-l-2 border-tlgray-200 ml-3">
+            {{ range first 3 $news.ByDate.Reverse }}
+            <div class="relative pl-8 pb-8 last:pb-0 group">
+                <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full border-2 border-blue-600 bg-white"></span>
+                <time class="block text-xs font-semibold uppercase tracking-wider text-blue-600 mb-1">{{ .Date.Format "Jan 2, 2006" }}</time>
+                <a href="{{ .Permalink }}" class="block">
+                    <h3 class="text-xl font-semibold text-tlgray-800 group-hover:text-blue-600 transition-colors mb-1">{{ .Title }}</h3>
+                    <p class="text-tlgray-400 text-sm leading-relaxed">{{ .Description | default .Summary | truncate 140 }}</p>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+        <div class="flex flex-wrap justify-center text-gray-300 my-5">
+            <a href="news/"
+                class="duration-200 px-6 py-3 bg-tlgray-800 hover:opacity-80 hover:text-white relative focus:outline-none text-base text-center flex flex-row items-center justify-center gap-2 font-medium">
+                All News <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+    {{ end }}
+
+    {{ if ne .Site.Params.showBlog false }}
+    <div class="mx-auto my-10 max-w-6xl px-4">
+        <h2 class="text-4xl mb-6 font-bold">Blog</h2>
+        {{- partial "recent.html" . -}}
+    </div>
+    {{ end }}
+{{ end }}
+
+{{ define "scripts" }}
+    <script src="{{ "/js/splide.min.js" | relURL }}"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+            new Splide( '.splide', {
+                type   : 'loop',
+                autoplay: true,
+                interval: 6000,
+                speed: 550,
+            } ).mount();
+        } );
+    </script>
+{{ end }}
