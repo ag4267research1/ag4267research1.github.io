@@ -7,7 +7,7 @@ title: "About"
 ## Anish Ghosh  
 
 
-I am currently a PhD student in the Mathematics and Statistics Department at the University of Maryland, Baltimore County (UMBC). My work lies at the intersection of mathematical theory and computation, where rigorous analysis and modern computational methods inform one another.
+I am currently a Research Assistant and PhD student in the Mathematics and Statistics Department at the University of Maryland, Baltimore County (UMBC). My work lies at the intersection of mathematical theory and computation, where rigorous analysis and modern computational methods inform one another.
 
 My research interests include numerical analysis, partial differential equations, and optimization. I am particularly interested in studying the mathematical structure of difficult problems, developing theoretical understanding through analysis and proofs, and then using those insights to design more effective computational methods. I am interested in both the theoretical foundations—proofs, analysis, and algorithmic guarantees—and the practical implementation of scalable numerical methods.
 
