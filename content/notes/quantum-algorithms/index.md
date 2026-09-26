@@ -1,7 +1,7 @@
 ---
 title: "Quantum Algorithms Slides"
 date: 2026-09-25
-description: "Slide decks on quantum algorithms."
+description: "Slides introducing fundamental quantum algorithms, companion material to the [Quantum-Algorithms](https://github.com/ag4267research1/Quantum-Algorithms) repo for anyone getting started with quantum computing."
 ---
 
 Slides introducing fundamental quantum algorithms, companion material to the [Quantum-Algorithms](https://github.com/ag4267research1/Quantum-Algorithms) repo for anyone getting started with quantum computing.
