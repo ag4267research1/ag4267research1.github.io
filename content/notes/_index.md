@@ -2,4 +2,4 @@
 title: "Notes"
 ---
 
-Short notes and working ideas.
+Slides and detailed notes on quantum algorithms, optimization, operator learning, PDEs, and numerical analysis.
