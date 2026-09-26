@@ -6,8 +6,10 @@ description: "Slides introducing fundamental quantum algorithms, companion mater
 
 Slides introducing fundamental quantum algorithms, companion material to the [Quantum-Algorithms](https://github.com/ag4267research1/Quantum-Algorithms) repo for anyone getting started with quantum computing.
 
-- [QA1](QA1.pdf)
-- [QA2](QA2.pdf)
+- [QA1](QA1.pdf) — Definitions, Measurement, Uncomputation, Intro to Phase Kickback
+- [QA2](QA2.pdf) - Phase Kickback,Joza,Deutsch-Joza
+algorithm, HSP, A direct comparison with
+classical computing
 
 <!--
 To add a slide deck: drop the PDF file directly into this folder
